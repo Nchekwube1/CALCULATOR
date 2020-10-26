@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .calc {
+  width: 23%;
+  height: 60%;
+  background-color: #d5d5d5;
+  border-radius: 5px;
+  border: 2px solid #dfd4d4;
+  position: relative;
+}
+
+.container .calc .screen {
+  position: relative;
+  width: 100%;
+  height: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .calc .screen .disp {
+  width: 90%;
+  height: 90%;
+  background-color: rgba(0, 0, 0, 0.07);
+  color: white;
+  cursor: not-allowed;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  text-align: right;
+  font-size: 26px;
+  text-indent: 3px;
+}
+
+.container .calc .body {
+  position: relative;
+  width: 100%;
+  height: 85%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[5];
+      grid-template-rows: repeat(5, 1fr);
+  grid-gap: 2px;
+}
+
+.container .calc .body input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-family: cursive;
+  font-size: 25px;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  border-radius: 3px;
+}
+
+.container .calc .body input#CE {
+  grid-column: span 2;
+}
+
+.container .calc .body input#eq {
+  grid-column: span 2;
+}
+/*# sourceMappingURL=cal.css.map */
